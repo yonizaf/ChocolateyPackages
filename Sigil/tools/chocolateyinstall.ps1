@@ -22,8 +22,9 @@ $packageArgs = @{
 	
   softwareName  = 'sigil'
 
-  checksum    = $checksum
+  checksum      = $checksum
   checksum64    = $checksum64
+  checksumType  = 'sha256'
   checksumType64= 'sha256'
 
   silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
