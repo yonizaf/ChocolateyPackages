@@ -1,11 +1,12 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sigil</id>
-    <version>1.9.1</version>
+    <version>1.9.2.20220518</version>
+	<packageSourceUrl>https://github.com/yonizaf/ChocolateyPackages/tree/main/Sigil</packageSourceUrl>
     <title>Sigil</title>
     <authors>John Nachtimwald</authors>
-    <owners>toto2700</owners>
+    <owners>yonizaf</owners>
     <licenseUrl>https://github.com/Sigil-Ebook/Sigil/blob/master/COPYING.txt</licenseUrl>
     <projectUrl>https://sigil-ebook.com</projectUrl>
     <iconUrl>https://rawcdn.githack.com/Sigil-Ebook/Sigil/a9b94d1715c80c70d8297b9feb4e22ac65642b40/src/Resource_Files/icon/app_icon_48.png</iconUrl>
