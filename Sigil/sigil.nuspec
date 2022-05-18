@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>sigil</id>
+    <version>1.9.1</version>
+    <title>Sigil</title>
+    <authors>John Nachtimwald</authors>
+    <owners>toto2700</owners>
+    <licenseUrl>https://github.com/Sigil-Ebook/Sigil/blob/master/COPYING.txt</licenseUrl>
+    <projectUrl>https://sigil-ebook.com</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Sigil-Ebook/Sigil/a9b94d1715c80c70d8297b9feb4e22ac65642b40/src/Resource_Files/icon/app_icon_48.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Sigil is a multi-platform EPUB ebook editor (think Word or LibreOffice but specific for EPUB ebooks) with the following features:
+
+Free and open source software under GPLv3
+Multi-platform: runs on Windows, Mac, and Linux (note Linux only receives limited support)
+Full UTF-16 support
+EPUB 2 spec support with limited EPUB 3 support
+Multiple Views: Book View, Code View and Preview View
+WYSIWYG editing in Book View
+Complete control over directly editing EPUB syntax in Code View
+Table of Contents generator with multi-level heading support
+Metadata editor
+User interface translated into many languages
+Spell checking with default and user configurable dictionaries
+Full Regular Expression (PCRE) support for Find and Replace
+Supports import of EPUB and HTML files, images, and style sheets,
+Documents can be validated for EPUB compliance with the integrated
+All imported files have their formatting corrected, and your editing can be optionally cleaned
+Plugins!
+
+Sigil user guide: https://github.com/Sigil-Ebook/sigil-user-guide/releases/latest</description>
+    <summary>multi-platform EPUB ebook editor</summary>
+    <tags>epub editor books</tags>
+    <projectSourceUrl>https://github.com/Sigil-Ebook/Sigil</projectSourceUrl>
+    <docsUrl>https://sigil-ebook.com/documentation/</docsUrl>
+    <bugTrackerUrl>https://github.com/Sigil-Ebook/Sigil/issues</bugTrackerUrl>
+  </metadata>
+</package>
