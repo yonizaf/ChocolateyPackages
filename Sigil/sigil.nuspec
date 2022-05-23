@@ -14,21 +14,21 @@
     <description>Sigil is a multi-platform EPUB ebook editor (think Word or LibreOffice but specific for EPUB ebooks) with the following features:
 
 Free and open source software under GPLv3
-Multi-platform: runs on Windows, Mac, and Linux (note Linux only receives limited support)
+Multi-platform: runs on Windows, Mac, and Linux
 Full UTF-16 support
-EPUB 2 spec support with limited EPUB 3 support
-Multiple Views: Book View, Code View and Preview View
-WYSIWYG editing in Book View
+EPUB 2 and EPUB 3 spec support
+Multiple Views: Code View and Preview View
 Complete control over directly editing EPUB syntax in Code View
 Table of Contents generator with multi-level heading support
 Metadata editor
 User interface translated into many languages
+Themeable icons
 Spell checking with default and user configurable dictionaries
-Full Regular Expression (PCRE) support for Find and Replace
-Supports import of EPUB and HTML files, images, and style sheets,
-Documents can be validated for EPUB compliance with the integrated
-All imported files have their formatting corrected, and your editing can be optionally cleaned
-Plugins!
+Full Regular Expression (PCRE) support for Find & Replace
+Supports import of EPUB and HTML files, images, and style sheets
+All imported files can have their formatting mended, and your code can be optionally "prettified"
+Plugin Support
+Checkpoint support (compare “snapshots” of changes)
 
 Sigil user guide: https://github.com/Sigil-Ebook/sigil-user-guide/releases/latest</description>
     <summary>multi-platform EPUB ebook editor</summary>
