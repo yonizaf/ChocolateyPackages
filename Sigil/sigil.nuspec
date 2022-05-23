@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sigil</id>
-    <version>1.9.2.20220518</version>
+    <version>1.9.10</version>
 	<packageSourceUrl>https://github.com/yonizaf/ChocolateyPackages/tree/main/Sigil</packageSourceUrl>
     <title>Sigil</title>
     <authors>John Nachtimwald</authors>
