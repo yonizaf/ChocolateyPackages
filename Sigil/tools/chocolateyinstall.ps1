@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url32          = 'https://github.com/Sigil-Ebook/Sigil/releases/download/1.9.10/Sigil-1.9.10-Windows-Setup.exe'
-$url64          = 'https://github.com/Sigil-Ebook/Sigil/releases/download/1.9.10/Sigil-1.9.10-Windows-x64-Setup.exe'
-$urlLegacy      = 'https://github.com/Sigil-Ebook/Sigil/releases/download/1.9.10/Sigil-1.9.10-Windows-Legacy-Setup.exe'
-$checksum       = '135cb9e6675e3d3207667af53f90dbe7986d4566ddcb31a00f5a0b35ef852492'
-$checksum64     = 'e9fb15c894e5174d86b9da1aa1b835b81e46cd2c738816d00d59d084bcf1256f'
-$checksumLegacy = 'ff9f1cc3ac28eafcd8d45052aa5be2b8e5343de84e513c993e296830d3f574cd'
+$url32          = 'https://github.com/Sigil-Ebook/Sigil/releases/download/1.9.20/Sigil-1.9.20-Windows-Setup.exe'
+$url64          = 'https://github.com/Sigil-Ebook/Sigil/releases/download/1.9.20/Sigil-1.9.20-Windows-x64-Setup.exe'
+$urlLegacy      = 'https://github.com/Sigil-Ebook/Sigil/releases/download/1.9.20/Sigil-1.9.20-Windows-Legacy-Setup.exe'
+$checksum       = 'afb336d379abf989a7e8940d33c15bb91664b6e28fde3f0d15644014609fd066'
+$checksum64     = '9ee1e4f62927afd21011ca567d343cbf441e5fb371f20743756b7a89b3ea2af8'
+$checksumLegacy = 'dfcc707c6c5b8b7475b4154d554f1053f9b40b319a3b9cac8978365fcf641ccb'
 
 if ([System.Environment]::OSVersion.Version -lt (new-object 'Version' 6, 2)) {
 	Write-Host "Installing Legacy version for Windows 7"; 

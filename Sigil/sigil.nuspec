@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sigil</id>
-    <version>1.9.10</version>
+    <version>1.9.20</version>
 	<packageSourceUrl>https://github.com/yonizaf/ChocolateyPackages/tree/main/Sigil</packageSourceUrl>
     <title>Sigil</title>
     <authors>John Nachtimwald</authors>
@@ -11,7 +11,7 @@
     <projectUrl>https://sigil-ebook.com</projectUrl>
     <iconUrl>https://rawcdn.githack.com/Sigil-Ebook/Sigil/a9b94d1715c80c70d8297b9feb4e22ac65642b40/src/Resource_Files/icon/app_icon_48.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Sigil is a multi-platform EPUB ebook editor (think Word or LibreOffice but specific for EPUB ebooks) with the following features:
+    <description>Sigil is a multi-platform EPUB ebook editor with the following features:
 
 Free and open source software under GPLv3
 Multi-platform: runs on Windows, Mac, and Linux
@@ -24,7 +24,7 @@ Metadata editor
 User interface translated into many languages
 Themeable icons
 Spell checking with default and user configurable dictionaries
-Full Regular Expression (PCRE) support for Find & Replace
+Full Regular Expression (PCRE) support for Find and Replace
 Supports import of EPUB and HTML files, images, and style sheets
 All imported files can have their formatting mended, and your code can be optionally "prettified"
 Plugin Support
