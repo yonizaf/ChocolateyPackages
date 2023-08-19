@@ -1,30 +1,22 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url32          = 'https://github.com/Sigil-Ebook/Sigil/releases/download/1.9.30/Sigil-1.9.30-Windows-Setup.exe'
-$url64          = 'https://github.com/Sigil-Ebook/Sigil/releases/download/1.9.30/Sigil-1.9.30-Windows-x64-Setup.exe'
-$urlLegacy      = 'https://github.com/Sigil-Ebook/Sigil/releases/download/1.9.30/Sigil-1.9.30-Windows-Legacy-Setup.exe'
-$checksum       = '048758dcc45b84cd4512d3eccb4d148af6ad395a05f1e177113557152123f776'
-$checksum64     = '9dd6bf318de813a0e2120dde81c4d17a7f6b7c3c1c25312f3adf68f23176713a'
-$checksumLegacy = 'ce4034bf51fc9ab7cf56201d736eeb395b6ebcea015708b1d09b8b0faa98b069'
+if (Get-OSArchitectureWidth -Compare 32) {
+  throw "Sigil is no longer available in 32-bit since version 2.0.0, pin the package version to 1.9.30 with command ``choco pin add --name=`"'sigil'`" --version=`"'1.9.30'`"``"
+}
 
-if ([System.Environment]::OSVersion.Version -lt (new-object 'Version' 6, 2)) {
-	Write-Host "Installing Legacy version for Windows 7"; 
-	$url32 = $url64 = $urlLegacy
-	$checksum = $checksum64 = $checksumLegacy
+if ([System.Environment]::OSVersion.Version -lt (new-object 'Version' 10, 0, 17763)) {
+  throw "Sigil is only available for Windows 10 Version 1809 or higher since version 2.0.0, pin the package version to 1.9.30 with command ``choco pin add --name=`"'sigil'`" --version=`"'1.9.30'`"``"
 }
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   fileType      = 'exe'
-  url           = $url32
-  url64bit      = $url64
+  url64bit      = 'https://github.com/Sigil-Ebook/Sigil/releases/download/2.0.0/Sigil-2.0.0-Windows-x64-Setup.exe'
 	
   softwareName  = 'sigil'
 
-  checksum      = $checksum
-  checksum64    = $checksum64
-  checksumType  = 'sha256'
+  checksum64    = 'e37f48f285501481195992fd44f48fe6bb2b292ca709f3e38300b99e6eadcae5'
   checksumType64= 'sha256'
 
   silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'

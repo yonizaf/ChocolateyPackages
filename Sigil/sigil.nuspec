@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sigil</id>
-    <version>1.9.30</version>
+    <version>2.0.0</version>
 	<packageSourceUrl>https://github.com/yonizaf/ChocolateyPackages/tree/main/Sigil</packageSourceUrl>
     <title>Sigil</title>
     <authors>John Nachtimwald</authors>
@@ -15,6 +15,7 @@
 
 Free and open source software under GPLv3
 Multi-platform: runs on Windows, Mac, and Linux
+**Requires 64bit windows 10 or above.**
 Full UTF-16 support
 EPUB 2 and EPUB 3 spec support
 Multiple Views: Code View and Preview View
