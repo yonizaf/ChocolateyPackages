@@ -3,13 +3,14 @@
   <metadata>
     <id>sigil</id>
     <version>2.0.0</version>
-	<packageSourceUrl>https://github.com/yonizaf/ChocolateyPackages/tree/main/Sigil</packageSourceUrl>
+    <packageSourceUrl>https://github.com/yonizaf/ChocolateyPackages/tree/main/Sigil</packageSourceUrl>
     <title>Sigil</title>
     <authors>John Nachtimwald</authors>
     <owners>yonizaf</owners>
     <licenseUrl>https://github.com/Sigil-Ebook/Sigil/blob/master/COPYING.txt</licenseUrl>
     <projectUrl>https://sigil-ebook.com</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Sigil-Ebook/Sigil/c1f630bfcb60bbaf7862b9cdfb92e67ef5f795b9/src/Resource_Files/icon/app_icons_orig/app_icon_128.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Sigil-Ebook/Sigil/569c5fdff0ec24c9bb667dd6f9c1d7661abcc403/src/Resource_Files/icon/app_icons_orig/app_icon_128.png</iconUrl>
+    <releaseNotes>[Software Changelog](https://raw.githubusercontent.com/Sigil-Ebook/Sigil/master/ChangeLog.txt)</releaseNotes>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Sigil is a multi-platform EPUB ebook editor with the following features:
 
