@@ -9,7 +9,7 @@
     <owners>yonizaf</owners>
     <licenseUrl>https://github.com/Sigil-Ebook/Sigil/blob/master/COPYING.txt</licenseUrl>
     <projectUrl>https://sigil-ebook.com</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Sigil-Ebook/Sigil/569c5fdff0ec24c9bb667dd6f9c1d7661abcc403/src/Resource_Files/icon/app_icons_orig/app_icon_128.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/yonizaf/ChocolateyPackages/icons/sigil.png</iconUrl>
     <releaseNotes>[Software Changelog](https://raw.githubusercontent.com/Sigil-Ebook/Sigil/master/ChangeLog.txt)</releaseNotes>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Sigil is a multi-platform EPUB ebook editor with the following features:
