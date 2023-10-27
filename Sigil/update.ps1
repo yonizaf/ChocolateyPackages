@@ -13,7 +13,7 @@ $checksumUri = $assetsPage.links | where-object href -match "CHECKSUMS.sha256.tx
 $downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $checksumUri 
 $checksum64 = ($downloadPage.RawContent.Split([System.Environment]::NewLine)  | Select-String "Windows-x64-Setup.exe")[0].Line.Split(" ")[0]
 
-(Get-Content ".\sigil.nuspec") -replace "(<version).*(</version>)", "`$1>$newver`$2" | Set-Content ".\sigil.nuspec"
+(Get-Content ".\sigil.nuspec") -replace "(<version).*(</version>)", "`$1>$latestTag`$2" | Set-Content ".\sigil.nuspec"
 (Get-Content ".\tools\chocolateyinstall.ps1") -replace "(url64bit\s+=\s*).*(')", "`$1'$url64`$2" -replace "(checksum64\s+=\s*).*(')", "`$1'$checksum64`$2" | Set-Content ".\tools\chocolateyinstall.ps1"
 
 $answer = ""
