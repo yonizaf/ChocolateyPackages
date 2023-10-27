@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 
 if (Get-OSArchitectureWidth -Compare 32) {
   throw "Sigil is no longer available in 32-bit since version 2.0.0, pin the package version to 1.9.30 with command ``choco pin add --name=`"'sigil'`" --version=`"'1.9.30'`"``"
@@ -12,11 +12,11 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   fileType      = 'exe'
-  url64bit      = 'https://github.com/Sigil-Ebook/Sigil/releases/download/2.0.1/Sigil-2.0.1-Windows-x64-Setup.exe'
+  url64bit      = 'https://github.com/Sigil-Ebook/Sigil/releases/download/2.0.2/Sigil-2.0.2-Windows-x64-Setup.exe'
 	
   softwareName  = 'sigil'
 
-  checksum64    = '6b6a68574dea1057708bfacc1f046b723ea70d585db2f94657a9229f331d6194'
+  checksum64    = '585be931caf286352a9c4e1f51f81967fbb3b981d28a7d9b674be0222c0f9805'
   checksumType64= 'sha256'
 
   silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
