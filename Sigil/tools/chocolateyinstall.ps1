@@ -12,11 +12,11 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   fileType      = 'exe'
-  url64bit      = 'https://github.com/Sigil-Ebook/Sigil/releases/download/2.5.0/Sigil-2.5.0-Windows-x64-Setup.exe'
+  url64bit      = 'https://github.com/Sigil-Ebook/Sigil/releases/download/2.5.1/Sigil-2.5.1-Windows-x64-Setup.exe'
 	
   softwareName  = 'sigil'
 
-  checksum64    = '8b3d5748be68cd8be256ac6ae026fa4ab2d1e1b59c7b63a80c7512827b0b5aba'
+  checksum64    = 'df617b3f09fda6e2942a6b546afa7ce67df0f9bc77d18568675bbd35a8c6a4c7'
   checksumType64= 'sha256'
 
   silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
