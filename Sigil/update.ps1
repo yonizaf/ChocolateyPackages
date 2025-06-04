@@ -9,10 +9,12 @@ $assetsPage   = Invoke-WebRequest -Uri $assetsUri
 $url64 = $assetsPage.links | where-object href -match "Windows-x64-Setup.exe" | select-object -expand href | foreach-object { $domain + $_ }
 $fileName64 = $url64Install -split '/' | select-object -last 1
 
-#$checksumUri = $assetsPage.links | where-object href -match "CHECKSUMS.sha256.txt" | select-object -expand href | foreach-object { $domain + $_ }
-#$downloadPage = Invoke-WebRequest -UseBasicParsing -Uri $checksumUri 
-#$checksum64 = ($downloadPage.RawContent.Split([System.Environment]::NewLine)  | Select-String "Windows-x64-Setup.exe")[0].Line.Split(" ")[0]
-$checksum64 = ((($assetsPage.Content  -split "[`r`n]" | Select-String "Windows-x64-Setup.exe.*sha256:") -split "sha256:")[1] -split '"')[0]
+if ($assetsPage.Content  -match  'Windows-x64-Setup.exe.*sha256:([0-9A-z]+)"'){
+$checksum64 = $Matches[1]
+}else{
+    Write-Output "Checksum acquirement failed."
+    exit 1
+}
 
 (Get-Content ".\sigil.nuspec") -replace "(<version).*(</version>)", "`$1>$latestTag`$2" | Set-Content ".\sigil.nuspec"
 (Get-Content ".\tools\chocolateyinstall.ps1") -replace "(url64bit\s+=\s*).*(')", "`$1'$url64`$2" -replace "(checksum64\s+=\s*).*(')", "`$1'$checksum64`$2" | Set-Content ".\tools\chocolateyinstall.ps1"
